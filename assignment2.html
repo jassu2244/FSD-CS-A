@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Counter App</title>
+    <style>
+      body {
+        background: #f1f3f6;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+      }
+      .card {
+        width: 300px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 28px 20px 20px 20px;
+      }
+      .logo-left {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-bottom: 14px;
+      }
+      h2 {
+        text-align: center;
+        margin-top: 0;
+      }
+      #counter,
+      #message {
+        text-align: center;
+      }
+      #counter {
+        font-size: 44px;
+        font-weight: bold;
+        margin: 14px 0;
+        color: black;
+        transition: color 0.2s;
+      }
+      .red {
+        color: red !important;
+      }
+      .buttons {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .buttons button {
+        font-size: 18px;
+        padding: 6px 18px;
+        margin: 0 6px;
+        border-radius: 4px;
+        border: 1px solid #aaa;
+        background: #f6f6f6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="abes logo black.jpg" alt="" class="logo-left" />
+      <h2>Counter App</h2>
+      <div id="counter">0</div>
+      <div id="message"></div>
+      <div class="buttons">
+        <button onclick="increase()">+</button>
+        <button onclick="decrease()">-</button>
+      </div>
+    </div>
+    <script>
+      let counter = 0;
+      const Counter = document.getElementById("counter");
+      const Message = document.getElementById("message");
+      const min = 0;
+      const max = 10;
+
+      function updateCounterColor() {
+        if (counter === 5) {
+          Counter.classList.add("red");
+        } else {
+          Counter.classList.remove("red");
+        }
+      }
+
+      function increase() {
+        if (counter < max) {
+          counter++;
+          Message.textContent = "";
+        } else {
+          Message.textContent = "Max limit reached";
+        }
+        Counter.textContent = counter;
+        updateCounterColor();
+      }
+      function decrease() {
+        if (counter > min) {
+          counter--;
+          Message.textContent = "";
+        } else {
+          Message.textContent = "Min. limit reached";
+        }
+        Counter.textContent = counter;
+        updateCounterColor();
+      }
+    </script>
+  </body>
+</html>
