@@ -5,16 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <style>
+  <!-- <style>
     #adi {
       border: 15px solid;
       height: 300px;
       width: 300px;
       background-color: green;
     }
-  </style>
-  <body>
-    <div id="adi">
+  </style> -->
+  <body id="adi">
+    <button onclick="red()">Red</button>
+    <button onclick="blue()">Blue</button>
+    <button onclick="green()">Green</button>
+    <script>
+      function red() {
+        document.getElementById("adi").style.backgroundColor = "red";
+      }
+      function blue() {
+        document.getElementById("adi").style.backgroundColor = "blue";
+      }
+      function green() {
+        document.getElementById("adi").style.backgroundColor = "green";
+      }
+    </script>
+    <!-- <div id="adi">
       <button onclick="abes()">click</button>
       <p id="aaa"></p>
       <script>
@@ -22,6 +36,6 @@
           document.getElementById("aaa").innerHTML = "hello";
         }
       </script>
-    </div>
+    </div> -->
   </body>
 </html>
