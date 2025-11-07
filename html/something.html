@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * ::selection {
+      background-color: pink;
+      color: black;
+    }
+    h1 {
+      text-align: center;
+      color: white;
+    }
+    nav {
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: greenyellow;
+    }
+    p::first-letter {
+      font-weight: bolder;
+      color: red;
+    }
+    p::first-line {
+      color: blue;
+    }
+    div {
+      background-color: blue;
+      border-radius: 2.5%;
+    }
+    li::marker {
+      color: red;
+    }
+  </style>
+  <body>
+    <div>
+      <h1 style="text-align: center">Assignment: Pseudo classes & Pseudo Elements</h1>
+      <nav>
+        <a href="">Home</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="">Galary</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      </nav>
+    </div>
+    <h3>Topics List</h3>
+    <ul>
+      <li>HTML Basics</li>
+      <li>Css Styling</li>
+      <li>JavaScript</li>
+      <li>React Js</li>
+      <li>Node Js</li>
+    </ul>
+    <p>
+      Css allows developers to use pseudo-classes and pseudo elements for styling special states of elements and
+      specific part of content
+    </p>
+  </body>
+</html>
