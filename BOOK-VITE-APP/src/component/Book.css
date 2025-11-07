@@ -1,0 +1,12 @@
+.card{
+    width: 400px;
+    height: 400px;
+    background-color: aquamarine;
+    color: red;
+    border: 5px solid black;
+    border-radius: 25px;
+    padding: 25px;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+}

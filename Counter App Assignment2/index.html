@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        #logo{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            size: 80px;
+
+        }
+        #buttons{
+            size: 100px;
+            height: 40px;
+            width: 80px;
+        }
+    </style>
+</head>
+<body >
+    <div  id="body">
+     <center>
+    <h1> Counter App</h1>
+    
+        <img src="/FSD-CS-A/Counter App Assignment2/counterimg.png" alt="" id="logo">
+    <h3 id="show"></h3>
+    
+   
+    <button onclick="add()" id="buttons">+</button> 
+    <button onclick="minus()"  id="buttons">-</button>
+
+    </center>
+   
+    </div>
+    <script>
+        let count=0;
+        function add(){
+            if(count<10){
+                count+=1;
+            document.getElementById("show").textContent=count;
+            }
+            else{
+                 document.getElementById("show").textContent="limit exceeded";
+            }
+        
+        }
+        function minus(){
+            if(count>0){
+                count-=1;
+            document.getElementById("show").textContent=count;
+            }
+            else{
+                document.getElementById("show").textContent="minimum  limit exceeded";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
