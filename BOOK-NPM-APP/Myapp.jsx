@@ -1,5 +1,9 @@
 import Book from "./Book";
-function App(){
+function Myapp(){
+    const data={
+        
+    }
+
     return(
         <div>
             <h1><center>Book Store</center></h1>
@@ -12,4 +16,4 @@ function App(){
     )
 }
 
-export default App;
+export default Myapp;

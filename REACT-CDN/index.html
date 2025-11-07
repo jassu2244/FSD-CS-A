@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App using React CDN</title>
+    <style>
+        .card{
+            width: 400px;
+            height: 400px;
+            background-color: beige;
+            color: blue;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+        img{
+            height: 240px;
+        }
+        .book-list{
+            display:flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <h1><center>BOOK STORE</center></h1>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="index.jsx"></script>
+</body>
+</html>

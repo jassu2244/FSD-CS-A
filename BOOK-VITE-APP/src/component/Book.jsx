@@ -21,10 +21,9 @@ const Book = ({book}) => {
         <img src={book.image} width={200} height={200} alt="" />
         <h3>Title: {book.title}</h3>
         <h4>Price: {book.price}</h4>
-        <br />
         <button style={{width:25}} onClick={decrement}> - </button>
         <span>{count }</span>
-        <button style={{width:25}} onClick={increment}>+</button><br />
+        <button style={{width:25}} onClick={increment}>+</button><br/>
         <button onClick={handleAddtoCart}>Add to Cart </button>
     </div>
   )
